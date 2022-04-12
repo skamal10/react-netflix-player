@@ -387,7 +387,7 @@ export default function ReactNetflixPlayer({
       clearTimeout(timerRef.current);
     }
 
-    timerRef.current = setTimeout(controllScreenTimeOut, 5000);
+    timerRef.current = setTimeout(controllScreenTimeOut, 1000);
   };
 
   const getKeyBoardInteration = e => {
