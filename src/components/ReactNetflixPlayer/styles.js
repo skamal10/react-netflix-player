@@ -183,7 +183,7 @@ export const Controlls = styled.div`
 
     svg {
       cursor: pointer;
-      opacity: 0.2;
+      opacity: 1;
       font-size: 25px;
       transition: all 0.2s ease-out;
 

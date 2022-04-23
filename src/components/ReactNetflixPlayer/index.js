@@ -16,6 +16,7 @@ import {
   FaClone,
   FaCompress,
   FaRedoAlt,
+  FaPhotoVideo,
 } from 'react-icons/fa';
 import { FiCheck, FiX } from 'react-icons/fi';
 import {
@@ -63,6 +64,7 @@ export default function ReactNetflixPlayer({
   onNextClick = false,
   onClickItemListReproduction = false,
   onCrossClick = () => { },
+  onImagesClick = () => { },
   startPosition = 0,
 
   dataNext = {},
@@ -780,6 +782,9 @@ export default function ReactNetflixPlayer({
                 </div>
               )}
 
+             <div className="item-control">
+               <FaPhotoVideo onClick={onImagesClick}/>
+             </div>
               <div className="item-control">
                 {fullScreen === false && <FaExpand onClick={enterFullScreen} />}
                 {fullScreen === true && <FaCompress onClick={exitFullScreen} />}
